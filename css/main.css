@@ -13,15 +13,12 @@
     --navbar-light-secondary: #8392a5;
 }
 header {
-    padding-top: 40px;
-    padding-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
     justify-content: space-between;
     height: 140px;
     display: flex;
     align-items: center;
-    width: 90%;
     margin: auto;
 }
 
