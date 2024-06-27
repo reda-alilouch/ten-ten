@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     if (toggle && sidebar && bodypd && asidepd) {
       toggle.addEventListener("click", () => {
         // show navbar
-        side.classList.toggle("show");
+        sidebar.classList.toggle("show");
         // change icon
         toggle.classList.toggle("fa");
         // add padding to body
