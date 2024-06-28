@@ -1,0 +1,23 @@
+:root {
+  --header-height: 3rem;
+  --nav-width: 68px;
+  --first-color: #fbfaff;
+  --first-color-light: #afa5d9;
+  --white-color: #ff4545;
+  --body-font: "Nunito", sans-serif;
+  --normal-font-size: 1rem;
+  --z-fixed: 100;
+  --primary-color: #ff4545;
+
+  --primary: #ff4545;
+  --light: #ffffff;
+  --dark: #000;
+
+  --background: #ff4545;
+  --navbar-width: 256px;
+  --navbar-width-min: 80px;
+  --navbar-dark-primary: #18283b;
+  --navbar-dark-secondary: #2c3e50;
+  --navbar-light-primary: #ffffff;
+  --navbar-light-secondary: #8392a5;
+}
