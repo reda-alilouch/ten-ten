@@ -11,6 +11,20 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
+  position: relative;
+  margin: var(--header-height) 0 0 0;
+  padding: 16px 1rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: 0.5s;
+  padding-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: calc(var(--header-height) + 1rem) 0 0 0;
+    padding-left: var(--nav-width);
+  }
 }
 
 .mode {
@@ -26,16 +40,8 @@ body.dark h1,
 body.dark .support a {
   color: #fff;
 }
-body {
-  position: relative;
-  margin: var(--header-height) 0 0 0;
-  padding: 16px 1rem;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  transition: 0.5s;
-}
 .body-pd {
-  padding-left: calc(var(--nav-width) + 1rem);
+  padding-left: var(--nav-width);
 }
 a {
   text-decoration: none;

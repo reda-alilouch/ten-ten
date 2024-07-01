@@ -1,0 +1,10 @@
+.carousel {
+  height: 100vh;
+}
+.carousel-inner {
+  height: calc(100% - var(--header-height));
+}
+.carousel-inner img {
+  height: calc(100% - var(--header-height));
+  object-fit: cover;
+}

@@ -3,5 +3,6 @@
 
 /* compnents */
 @import url(components/aside.css);
+@import url(components/carousel.css);
 @import url(components/toggle_darkmode.css);
 @import url(components/header.css);
