@@ -1,0 +1,7 @@
+@import url(variables/variables.css);
+@import url(base/main.css);
+
+/* compnents */
+@import url(components/aside.css);
+@import url(components/toggle_darkmode.css);
+@import url(components/header.css);
