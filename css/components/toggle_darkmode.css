@@ -1,0 +1,23 @@
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.checkbox-label .ball {
+  background-color: #a2a1a1;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+  margin-top: 8px;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(95px);
+}
