@@ -1,0 +1,14 @@
+@import url(style.css);
+.genre {
+  width: 200px;
+  height: 180px;
+}
+.img-genre {
+  width: 200px;
+  height: 180px;
+}
+.h3-genre {
+  text-align: start;
+  margin-top: -25px;
+  color: white;
+}
