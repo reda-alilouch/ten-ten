@@ -7,19 +7,15 @@
   height: 200px;
   width: 200px;
   border-radius: 180px;
+  object-fit: cover;
+  transition: 0.25s;
 }
 .h3-artist {
   text-align: center;
   margin-top: -21px;
 }
-.col-artist:hover .artist {
-  height: 240px;
-  width: 240px;
-}
 .col-artist:hover .img-artist {
-  height: 240px;
-  width: 240px;
-  border-radius: 180px;
+  transform: scale(1.1);
 }
 .container1 {
   margin-bottom: 35px;

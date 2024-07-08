@@ -6,6 +6,7 @@
 .img-genre {
   width: 200px;
   height: 180px;
+  object-fit: cover;
 }
 .h3-genre {
   text-align: start;
