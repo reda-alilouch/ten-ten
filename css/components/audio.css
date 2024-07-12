@@ -1,26 +1,30 @@
 .audio {
-    margin: 20px;
+
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 60px;
   align-items: center;
   justify-content: space-between;
-
-  
+  color: var(--primary);
+  position: fixed;
+ bottom: 0;
+  width: 100%;
+  z-index: 2000;
+  left: 0;
+  background-color: var(--first-color);
 }
+
 .timeic {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 .audio1 {
-    
-    justify-content: space-between;
-
+  justify-content: space-between;
 }
-.noting{
-    width: 156px;
+.nom {
+  width: 156px;
 }
 .fa-audio {
-    margin: 20px;
+  margin: 20px;
 }

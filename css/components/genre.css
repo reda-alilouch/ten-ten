@@ -11,5 +11,11 @@
 .h3-genre {
   text-align: start;
   margin-top: -25px;
-  color: white;
+  
+}
+.genre:hover .img-genre   {
+  opacity: 0.6;
+}
+.icon-scroll{
+  display: flex;
 }

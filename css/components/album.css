@@ -1,47 +1,39 @@
 @import url(style.css);
-.container3{
-  padding-bottom:250px;
-  
-}
-.album-img{
-    position: relative;
-}
-.icon-album {
-  position: absolute;
+
+.album-img {
+  position: relative;
 }
 .h3-album {
   position: absolute;
 }
-.album {
-    position: absolute;
-    gap: 60px;
-  }
-  .album-img {
-    width: 300px;
-    height: 240px;
-    border-radius: 10px;
-    margin-left: 10px;
-  }
-  .h3-album {
-      margin-top: -40px;
-    padding-left: 14px;
-  }
-  .icon-album {
-    padding-left: 19px;
-    margin-top: -234px;
-    position: absolute;
-  }
-  .fa-solid {
-    font-size: 22px;
-  }
-  .row {
-    justify-content: space-between;
-  }
-  .icon {
-    transition: opacity 1s;
-    opacity: 0;
-    color:#ff4545;
-  }
-  .album:hover .icon{
-    opacity: 1;
-  }
+
+.album-img {
+  width: 300px;
+  height: 240px;
+  border-radius: 10px;
+  object-fit: cover;
+  
+}
+.h3-album {
+  margin-top: -40px;
+  padding-left: 2px;
+}
+.icon-album {
+  
+  margin-top: -234px;
+  position: absolute;
+}
+.fa-solid {
+  font-size: 22px;
+}
+.icon {
+  transition: opacity 1s;
+  opacity: 0;
+  color: #ff4545;
+}
+.album:hover .icon {
+  opacity: 1;
+}
+.album:hover .album-img   {
+  opacity: 0.6;
+}

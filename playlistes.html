@@ -70,7 +70,8 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Français
+              <i class="fa-solid fa-globe"></i>
+              <i class="fa-solid fa-chevron-down"></i>
             </button>
             <ul class="dropdown-menu">
               <li>
@@ -80,8 +81,6 @@
                 <a class="dropdown-item" href="#">English</a>
               </li>
             </ul>
-            <i class="fa-solid fa-globe"></i>
-            <i class="fa-solid fa-chevron-down"></i>
           </div>
 
           <div>
@@ -95,7 +94,7 @@
         <div class="side">
           <div>
             <div class="side_list">
-              <a href="home.html" class="side_link ">
+              <a href="home.html" class="side_link">
                 <i class="fa-solid fa-house bx-grid-alt nav_icon"></i>
                 <span class="side_name">Accueil</span>
               </a>
@@ -117,7 +116,7 @@
                 <i class="bx bx-folder nav_icon"></i>
                 <span class="side_name">Playlists</span>
               </a>
-              <a href="favoris.html" class="side_link ">
+              <a href="favoris.html" class="side_link">
                 <i class="fa-solid fa-heart bx bx-bar-chart-alt-2 nav_icon"></i>
                 <span class="side_name">Favoris</span>
               </a>
@@ -128,16 +127,16 @@
       <div class="container container-playlist">
         <div class="row row-playlist">
           <div class="col-3">
-            <div class="album">
+            <div class="playlist">
               <img
-                class="album-img"
+                class="playlist__img"
                 src="img/smartphone-coffee-music-objects.jpg"
               />
-              
-              <div class="nom-playlist">
-                <h3>nom playlist</h3>
-                
+              <div class="playlist__texte">
+                <h3 class="playlist__texte__nom">nom playlist</h3>
+                <p class="playlist__texte__titres">0 titres</p>
               </div>
+              <i class="playlist__icon fa-solid fa-circle-play"></i>
             </div>
           </div>
           <div class="col-3"></div>

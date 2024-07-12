@@ -1,38 +1,25 @@
-@import url(style.css);
-.artist {
-  height: 200px;
-  width: 200px;
+.artist__baniere{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
-.img-artist {
+.artist__baniere__photo {
+  height: 350px;
+  width: 1250px;
+  object-fit: cover;
+  opacity: 0.6;
+
+}
+.artist__profile__photo {
   height: 200px;
   width: 200px;
   border-radius: 180px;
   object-fit: cover;
   transition: 0.25s;
+  margin-top: -160px;
+  margin-left: 30px;
 }
-.h3-artist {
-  text-align: center;
-  margin-top: -21px;
+.artist__profile {
+  display: flex;
 }
-.col-artist:hover .img-artist {
-  transform: scale(1.1);
-}
-
-.container1 {
-  margin-bottom: 35px;
-}
-
-.bitina {
-  position: relative;
-  left: 55px;
-  bottom: 113px;
-  border-radius: 15px;
-  border: gray;
-  background-color: var(--primary);
-  color: #fff;
-  opacity: 0;
-}
-
-.col-artist:hover .bitina {
-  opacity: 1;
+.artist__profile__text{
+    margin-top: -100px;
 }

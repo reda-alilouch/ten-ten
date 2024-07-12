@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 * {
   box-sizing: border-box;
-  text-decoration: none !important;
+ 
 }
 
 ::before,
@@ -20,6 +20,18 @@ body {
   font-size: var(--normal-font-size);
   transition: 0.5s;
   padding-right: 0;
+}
+.fa-solid {
+  transition: 0.25s;
+}
+.fa-solid :hover .fa-solid {
+  transform: scale(1.1);
+}
+.container{
+  --bs-gutter-x:0;
+}
+.top{
+  padding-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -43,11 +55,8 @@ body.dark .support a {
   color: #fff;
 }
 .body-pd {
-  padding-left: var(--nav-width);
+  padding-left: var(--nav-width-expanded);
 }
 a {
   text-decoration: none;
 }
-
-
-
