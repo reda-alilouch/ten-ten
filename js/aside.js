@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-  const showSidebar = (toggleId, sideId, bodyId) => {
+  const showsSidebar = (toggleId, sideId, bodyId) => {
     const toggle = document.getElementById(toggleId),
       sidebar = document.getElementById(sideId),
       bodypd = document.getElementById(bodyId)
@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Validate that all variables exist
     if (toggle && sidebar && bodypd) {
       toggle.addEventListener("click", () => {
-        // show navbar
-        sidebar.classList.toggle("show");
+        // shows navbar
+        sidebar.classList.toggle("shows");
         // change icon
         toggle.classList.toggle("fa");
         // add padding to body
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   };
 
-  showSidebar("aside-toggle", "sidebar", "body-pd");
+  showsSidebar("aside-toggle", "sidebar", "body-pd");
 
   /*===== LINK ACTIVE =====*/
   const linkColor = document.querySelectorAll(".side_link");

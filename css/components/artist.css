@@ -15,6 +15,7 @@
   z-index: 200;
   margin-top: -160px;
   margin-left: 30px;
+  transition: 0.25s;
 }
 .artist__profile {
   display: flex;
@@ -37,7 +38,7 @@
   position: relative;
   object-fit: cover;
 }
-.titre {
+.titre__artist {
   display: flex;
   align-items: center;
   height: 70px;
@@ -66,24 +67,67 @@ h3 {
   margin-bottom: 0;
   justify-content: start;
 }
-.fa-heart,
-.fa-plus {
-  align-items: center;
-}
 
 p {
   margin: 0;
 }
-.titre__img__icon {
-  transition: opacity 1s;
-  color: #ff4545;
-  position: absolute;
-  margin: 27px;
-  opacity: 0;
+.artist__profile__photo:hover {
+  transform: scale(1.1);
 }
-.titre:hover .titre__img__icon {
+.artist {
+  padding-bottom: 100px;
+}
+.titres {
+  display: flex;
+  margin-top: 20px;
+  height: 200px;
+}
+.titres__h4 {
+  display: flex;
+  gap: 15px;
+}
+.titres__h3 {
+  font-size: 4rem;
+  padding-bottom: 5px;
+}
+.h4 {
+  font-size: 1rem;
+  margin: 5px;
+}
+.titres__texte {
+  display: flex;
+}
+.titres__texte__icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.titres__icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.fa-icon {
+  opacity: 0;
+  transition: 0.25s;
+  text-align: center;
+  margin-top: 10px;
+}
+.titres__texte__icon :hover .fa-icon {
   opacity: 1;
 }
-.row__titre{
-  margin-top: 20px;
+.titre__photo {
+  width: 150px;
+  height: 150px;
+}
+
+a{
+  color: black;
+}
+tr :hover {
+  background-color: silver;
+}
+.table > tbody {
+  vertical-align: baseline;
 }
