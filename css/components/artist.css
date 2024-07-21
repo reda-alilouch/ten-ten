@@ -122,10 +122,10 @@ p {
   height: 150px;
 }
 
-a{
+a {
   color: black;
 }
-tr :hover {
+tr:hover td {
   background-color: silver;
 }
 .table > tbody {

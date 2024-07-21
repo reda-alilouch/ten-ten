@@ -10,6 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -17,21 +18,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body id="body-pd">
     <header class="bg-light">
       <div class="aside_toggle">
-        <i class="bx-menu fa-solid fa-bars" id="aside-toggle"></i>
+        <i class="bx bx-menu" jjjj id="aside-toggle"></i>
       </div>
       <div id="nav-header">
-        <a id="nav-title" href="home.html" target="_blank">
+        <a id="nav-title" href="/" target="_blank">
           <img
             src="img/Remove-bg.ai_1716905679652.png"
             alt="logo"
@@ -82,9 +88,10 @@
               </li>
             </ul>
           </div>
-
           <div>
-            <button class="btn border" type="button">Conexion</button>
+            <a href="#"
+              ><button class="btn border" type="button">Conexion</button></a
+            >
           </div>
         </div>
       </nav>
@@ -94,37 +101,35 @@
         <div class="side">
           <div>
             <div class="side_list">
-              <a href="home.html" class="side_link active">
-                <i class="fa-solid fa-house bx-grid-alt nav_icon"></i>
+              <a href="/" class="side_link active">
+                <i class="bx bxs-home"></i>
                 <span class="side_name">Accueil</span>
               </a>
               <a href="genres.html" class="side_link">
-                <i class="fa-solid fa-icons bx bx-user nav_icon"></i>
+                <i class="bx bxs-category"></i>
                 <span class="side_name">Genres</span>
               </a>
               <a href="artistes.html" class="side_link">
-                <i
-                  class="fa-solid fa-user bx bx-message-square-detail nav_icon"
-                ></i>
+                <i class="bx bxs-user"></i>
                 <span class="side_name">Artistes</span>
               </a>
               <a href="albums.html" class="side_link">
-                <i class="fa-solid fa-compact-disc bx bx-bookmark nav_icon"></i>
+                <i class="bx bxs-album"></i>
                 <span class="side_name">Albums</span>
               </a>
               <a href="playlistes.html" class="side_link">
-                <i class="bx bx-folder nav_icon"></i>
+                <i class="bx bx-folder nav_icon bx bxs-playlist"></i>
                 <span class="side_name">Playlists</span>
               </a>
               <a href="favoris.html" class="side_link">
-                <i class="fa-solid fa-heart bx bx-bar-chart-alt-2 nav_icon"></i>
+                <i class="bx bxs-heart"></i>
                 <span class="side_name">Favoris</span>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <div id="carouselExampleIndicators" class="carousel carousel1 slide">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -209,27 +214,8 @@
                 </div>
                 <div class="icon-time">
                   <p>03:00</p>
-                  <a><i class="fa-solid fa-plus"></i></a>
-                  <a><i class="fa-solid fa-heart"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="titre">
-                <div class="img-h3">
-                  <a  href="#"
-                    ><img class="img-titre" src="img/tape-6824489_960_720.jpg"
-                  /></a>
-                  <i class="my-icon fa-solid fa-play"></i>
-                  <div class="h3">
-                    <h3>nom song</h3>
-                    <h3>nom artiste</h3>
-                  </div>
-                </div>
-                <div class="icon-time">
-                  <p>03:00</p>
-                  <a  href="#"><i class="fa-solid fa-plus"></i></a>
-                  <a  href="#"><i class="fa-solid fa-heart"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
                 </div>
               </div>
             </div>
@@ -247,8 +233,27 @@
                 </div>
                 <div class="icon-time">
                   <p>03:00</p>
-                  <a href="#"><i class="fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="titre">
+                <div class="img-h3">
+                  <a href="#"
+                    ><img class="img-titre" src="img/tape-6824489_960_720.jpg"
+                  /></a>
+                  <i class="my-icon fa-solid fa-play"></i>
+                  <div class="h3">
+                    <h3>nom song</h3>
+                    <h3>nom artiste</h3>
+                  </div>
+                </div>
+                <div class="icon-time">
+                  <p>03:00</p>
+                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
                 </div>
               </div>
             </div>
@@ -270,8 +275,8 @@
                 </div>
                 <div class="icon-time">
                   <p>03:00</p>
-                  <a href="#"><i class="fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
                 </div>
               </div>
             </div>
@@ -289,8 +294,8 @@
                 </div>
                 <div class="icon-time">
                   <p>03:00</p>
-                  <a href="#"><i class="fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
                 </div>
               </div>
             </div>
@@ -308,8 +313,8 @@
                 </div>
                 <div class="icon-time">
                   <p>03:00</p>
-                  <a href="#"><i class="fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
                 </div>
               </div>
             </div>
@@ -331,8 +336,8 @@
                 </div>
                 <div class="icon-time">
                   <p>03:00</p>
-                  <a href="#"><i class="fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
                 </div>
               </div>
             </div>
@@ -352,8 +357,8 @@
                 </div>
                 <div class="icon-time">
                   <p>03:00</p>
-                  <a href="#"><i class="fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
                 </div>
               </div>
             </div>
@@ -371,8 +376,8 @@
                 </div>
                 <div class="icon-time">
                   <p>03:00</p>
-                  <a href="#"><i class="fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
+                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
                 </div>
               </div>
             </div>
@@ -391,65 +396,69 @@
           <div class="row">
             <div class="col-3">
               <div class="album">
-                <img
-                  class="album-img"
-                  src="img/smartphone-coffee-music-objects.jpg"
-                />
+                <a href="#"
+                  ><img
+                    class="album-img"
+                    src="img/smartphone-coffee-music-objects.jpg"
+                /></a>
                 <div class="icon-album">
-                  <i class="icon fa-solid fa-circle-play"></i>
-                  <i class="icon fa-solid fa-heart"></i>
+                  <a href="#"> <i class="icon fa-solid fa-circle-play"></i></a>
+                  <a href="#"><i class="icon fa-solid fa-heart"></i></a>
                 </div>
                 <div class="h3-album">
                   <h3>nom albums</h3>
-                  <h3>nom artiste</h3>
+                  <a href="#"><h3>nom artiste</h3></a>
                 </div>
               </div>
             </div>
             <div class="col-3">
               <div class="album">
-                <img
-                  class="album-img"
-                  src="img/smartphone-coffee-music-objects.jpg"
-                />
+                <a href="#"
+                  ><img
+                    class="album-img"
+                    src="img/smartphone-coffee-music-objects.jpg"
+                /></a>
                 <div class="icon-album">
-                  <i class="icon fa-solid fa-circle-play"></i>
-                  <i class="icon fa-solid fa-heart"></i>
+                  <a href="#"><i class="icon fa-solid fa-circle-play"></i></a>
+                  <a href="#"><i class="icon fa-solid fa-heart"></i></a>
                 </div>
                 <div class="h3-album">
                   <h3>nom albums</h3>
-                  <h3>nom artiste</h3>
+                  <a href="#"><h3>nom artiste</h3></a>
                 </div>
               </div>
             </div>
             <div class="col-3">
               <div class="album">
-                <img
-                  class="album-img"
-                  src="img/smartphone-coffee-music-objects.jpg"
-                />
+                <a href="#"
+                  ><img
+                    class="album-img"
+                    src="img/smartphone-coffee-music-objects.jpg"
+                /></a>
                 <div class="icon-album">
-                  <i class="icon fa-solid fa-circle-play"></i>
-                  <i class="icon fa-solid fa-heart"></i>
+                  <a href="#"><i class="icon fa-solid fa-circle-play"></i></a>
+                  <a href="#"><i class="icon fa-solid fa-heart"></i></a>
                 </div>
                 <div class="h3-album">
                   <h3>nom albums</h3>
-                  <h3>nom artiste</h3>
+                  <a href="#"><h3>nom artiste</h3></a>
                 </div>
               </div>
             </div>
             <div class="col-3">
               <div class="album">
-                <img
-                  class="album-img"
-                  src="img/smartphone-coffee-music-objects.jpg"
-                />
+                <a href="#"
+                  ><img
+                    class="album-img"
+                    src="img/smartphone-coffee-music-objects.jpg"
+                /></a>
                 <div class="icon-album">
-                  <i class="icon fa-solid fa-circle-play"></i>
-                  <i class="icon fa-solid fa-heart"></i>
+                  <a href="#"><i class="icon fa-solid fa-circle-play"></i></a>
+                  <a href="#"><i class="icon fa-solid fa-heart"></i></a>
                 </div>
                 <div class="h3-album">
                   <h3>nom albums</h3>
-                  <h3>nom artiste</h3>
+                  <a href="#"><h3>nom artiste</h3></a>
                 </div>
               </div>
             </div>
@@ -460,13 +469,13 @@
         <div class="head">
           <h2>Top artistes</h2>
           <div class="voir-plus">
-            <a> <p class="voir">voir plus</p></a>
+            <a href="#"> <p class="voir">voir plus</p></a>
           </div>
         </div>
         <div class="container text-start">
           <div class="row">
             <div class="col-2 col-artistes">
-              <a>
+              <a href="#">
                 <div class="artistes">
                   <img
                     class="img-artistes"
@@ -477,7 +486,7 @@
               >
             </div>
             <div class="col-2 col-artistes">
-              <a>
+              <a href="#">
                 <div class="artistes">
                   <img
                     class="img-artistes"
@@ -488,7 +497,7 @@
               >
             </div>
             <div class="col-2 col-artistes">
-              <a>
+              <a href="#">
                 <div class="artistes">
                   <img
                     class="img-artistes"
@@ -499,7 +508,7 @@
               >
             </div>
             <div class="col-2 col-artistes">
-              <a>
+              <a href="#">
                 <div class="artistes">
                   <img
                     class="img-artistes"
@@ -510,7 +519,7 @@
               >
             </div>
             <div class="col-2 col-artistes">
-              <a>
+              <a href="#">
                 <div class="artistes">
                   <img
                     class="img-artistes"
@@ -521,7 +530,7 @@
               >
             </div>
             <div class="col-2 col-artistes">
-              <a>
+              <a href="#">
                 <div class="artistes">
                   <img class="img-artistes" src="img/kid-with-microphone.jpg" />
                   <h3 class="h3-artistes">nom artiste</h3>
@@ -535,148 +544,262 @@
         <div class="head">
           <h2>Top genres</h2>
           <div class="voir-plus">
-            <a> <p class="voir">voir plus</p></a>
+            <a href="#"> <p class="voir">voir plus</p></a>
           </div>
         </div>
-        <div class="container container-genre-home text-start">
-          <div class="row row-genre">
-            <div class="col-2">
-              <a>
-                <div class="genre">
-                  <img
-                    class="img-genre"
-                    src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
-                  />
-                  <h3 class="h3-genre">nom genre</h3>
-                </div></a
-              >
+        <div id="carouselExampleIndicators2" class="carousel carousel2 slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row row-genre">
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="col-2">
-              <a>
-                <div class="genre">
-                  <img
-                    class="img-genre"
-                    src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
-                  />
-                  <h3 class="h3-genre">nom genre</h3>
-                </div></a
-              >
+            <div class="carousel-item">
+              <div class="row row-genre">
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="col-2">
-              <a>
-                <div class="genre">
-                  <img
-                    class="img-genre"
-                    src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
-                  />
-                  <h3 class="h3-genre">nom genre</h3>
-                </div></a
-              >
-            </div>
-            <div class="col-2">
-              <a>
-                <div class="genre">
-                  <img
-                    class="img-genre"
-                    src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
-                  />
-                  <h3 class="h3-genre">nom genre</h3>
-                </div></a
-              >
-            </div>
-            <div class="col-2">
-              <a>
-                <div class="genre">
-                  <img
-                    class="img-genre"
-                    src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
-                  />
-                  <h3 class="h3-genre">nom genre</h3>
-                </div></a
-              >
-            </div>
-            <div class="col-2">
-              <a>
-                <div class="genre">
-                  <img
-                    class="img-genre"
-                    src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
-                  />
-                  <h3 class="h3-genre">nom genre</h3>
-                </div></a
-              >
-            </div></div><div class="row row-genre">
-            <div class="col-2">
-              <a>
-                <div class="genre">
-                  <img
-                    class="img-genre"
-                    src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
-                  />
-                  <h3 class="h3-genre">nom genre</h3>
-                </div></a
-              >
-            </div>
-            <div class="col-2">
-              <a>
-                <div class="genre">
-                  <img
-                    class="img-genre"
-                    src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
-                  />
-                  <h3 class="h3-genre">nom genre</h3>
-                </div></a
-              >
-            </div>
-            <div class="col-2">
-              <a>
-                <div class="genre">
-                  <img
-                    class="img-genre"
-                    src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
-                  />
-                  <h3 class="h3-genre">nom genre</h3>
-                </div></a
-              >
-            </div>
-            <div class="col-2">
-              <a>
-                <div class="genre">
-                  <img
-                    class="img-genre"
-                    src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
-                  />
-                  <h3 class="h3-genre">nom genre</h3>
-                </div></a
-              >
-            </div>
-            <div class="col-2">
-              <a>
-                <div class="genre">
-                  <img
-                    class="img-genre"
-                    src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
-                  />
-                  <h3 class="h3-genre">nom genre</h3>
-                </div></a
-              >
-            </div>
-            <div class="col-2">
-              <a>
-                <div class="genre">
-                  <img
-                    class="img-genre"
-                    src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
-                  />
-                  <h3 class="h3-genre">nom genre</h3>
-                </div></a
-              >
-            </div>
-            <div class="icon-scroll">
-              <i class="fa-solid fa-chevron-left"></i
-              ><i class="fa-solid fa-chevron-right"></i>
+            <div class="carousel-item">
+              <div class="row row-genre">
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <div class="genre">
+                      <img
+                        class="img-genre"
+                        src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
+                      />
+                      <h3 class="h3-genre">nom genre</h3>
+                    </div></a
+                  >
+                </div>
+              </div>
             </div>
           </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </main>
@@ -687,21 +810,21 @@
     <div class="audio">
       <div class="nom">
         <h3>nom titre</h3>
-        <a><h3>nom artiste</h3></a>
+        <a href="#"><h3>nom artiste</h3></a>
       </div>
       <div class="audio1">
-        <a><i class="fa-audio fa-solid fa-repeat"></i></a>
-        <a><i class="fa-audio fa-solid fa-backward-step"></i></a>
-        <a><i class="fa-audio fa-solid fa-pause"></i></a>
-        <a><i class="fa-audio fa-solid fa-forward-step"></i></a>
-        <a><i class="fa-audio fa-solid fa-shuffle"></i></a>
+        <a href="#"><i class="fa-audio fa-solid fa-repeat"></i></a>
+        <a href="#"><i class="fa-audio fa-solid fa-backward-step"></i></a>
+        <a href="#"><i class="fa-audio fa-solid fa-pause"></i></a>
+        <a href="#"><i class="fa-audio fa-solid fa-forward-step"></i></a>
+        <a href="#"><i class="fa-audio fa-solid fa-shuffle"></i></a>
       </div>
       <div class="timeic">
-        <div>
+        <div class="time__audio">
           <p>00:00/00:00</p>
         </div>
-        <a><i class="fa-solid fa-heart"></i></a>
-        <i class="fa-solid fa-ellipsis-vertical"></i>
+        <a href="#"><i class="fa-audio fa-solid fa-heart"></i></a>
+        <i class="fa-audio fa-solid fa-ellipsis-vertical"></i>
       </div>
     </div>
 

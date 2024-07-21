@@ -75,3 +75,9 @@ p {
 .titre:hover .my-icon {
   opacity: 1;
 }
+.titre__icon{
+  color: #ff4545;
+}
+.titre__icon:hover{
+  transform: scale(1.1);
+}

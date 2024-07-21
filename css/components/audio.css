@@ -1,3 +1,4 @@
+@import url(style.css);
 .audio {
 
   display: flex;
@@ -18,13 +19,20 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+.time__audio{
+  color: black;
 }
 .audio1 {
   justify-content: space-between;
 }
 .nom {
   width: 156px;
+  color: black;
 }
 .fa-audio {
   margin: 20px;
+  color: var(--first-color-light);
 }
