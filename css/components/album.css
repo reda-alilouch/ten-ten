@@ -1,0 +1,19 @@
+.album__profile__photo{
+    width: 360px;
+    height: 240px;
+    object-fit: cover;
+    z-index: 200;
+    margin-top: -160px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.Album__icon{
+    color: #ff4545;
+    font-size: 36px;
+    margin-left: 100px;
+    margin-top: -54px;
+    z-index: 200;
+}
+.Album__icon:hover{
+    transform: scale(1.1);
+}

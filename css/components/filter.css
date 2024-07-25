@@ -1,0 +1,39 @@
+@import url(style.css);
+
+.myBtnContainer{
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-bottom: 30px;
+}
+.filterDiv {
+  float: left;
+  display: none; /* Hidden by default */
+}
+
+/* The "showe" class is added to the filtered elements */
+.showe-filter {
+  display: block;
+}
+
+/* Style the buttons */
+.btn1 {
+  border: none;
+  outline: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  width: 160px;
+  height: 40px;
+  border-radius: 30px !important;
+}
+
+/* Add a light grey background on mouse-over */
+.btn1:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+/* Add a dark background to the active button */
+.btn1.filter--active {
+  background-color: var(--primary);
+  color: white;
+}
