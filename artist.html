@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>tenten</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -17,18 +18,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body id="body-pd">
     <header class="bg-light">
       <div class="aside_toggle">
-        <i class="bx-menu fa-solid fa-bars" id="aside-toggle"></i>
+        <i class="bx bx-menu" jjjj id="aside-toggle"></i>
       </div>
       <div id="nav-header">
         <a id="nav-title" href="index.html" target="_blank">
@@ -69,7 +75,7 @@
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
-            >
+            >Français
               <i class="fa-solid fa-globe"></i>
               <i class="fa-solid fa-chevron-down"></i>
             </button>
@@ -82,9 +88,10 @@
               </li>
             </ul>
           </div>
-
           <div>
-            <button class="btn border" type="button">Conexion</button>
+            <a href="#"
+              ><button class="btn border" type="button">Conexion</button></a
+            >
           </div>
         </div>
       </nav>
@@ -94,30 +101,28 @@
         <div class="side">
           <div>
             <div class="side_list">
-              <a href="index.html" class="side_link">
-                <i class="fa-solid fa-house bx-grid-alt nav_icon"></i>
+              <a href="index.html" class="side_link ">
+                <i class="bx bxs-home"></i>
                 <span class="side_name">Accueil</span>
               </a>
               <a href="genres.html" class="side_link">
-                <i class="fa-solid fa-icons bx bx-user nav_icon"></i>
+                <i class="bx bxs-category"></i>
                 <span class="side_name">Genres</span>
               </a>
               <a href="artistes.html" class="side_link active">
-                <i
-                  class="fa-solid fa-user bx bx-message-square-detail nav_icon"
-                ></i>
+                <i class="bx bxs-user"></i>
                 <span class="side_name">Artistes</span>
               </a>
               <a href="albums.html" class="side_link">
-                <i class="fa-solid fa-compact-disc bx bx-bookmark nav_icon"></i>
+                <i class="bx bxs-album"></i>
                 <span class="side_name">Albums</span>
               </a>
               <a href="playlistes.html" class="side_link">
-                <i class="bx bx-folder nav_icon"></i>
+                <i class="bx bx-folder nav_icon bx bxs-playlist"></i>
                 <span class="side_name">Playlists</span>
               </a>
               <a href="favoris.html" class="side_link">
-                <i class="fa-solid fa-heart bx bx-bar-chart-alt-2 nav_icon"></i>
+                <i class="bx bxs-heart"></i>
                 <span class="side_name">Favoris</span>
               </a>
             </div>
@@ -2702,6 +2707,26 @@
         </div>
       </div>
     </main>
+    <div class="audio">
+      <div class="nom">
+        <h3>nom titre</h3>
+        <a href="#"><h3>nom artiste</h3></a>
+      </div>
+      <div class="audio1">
+        <a href="#"><i class="fa-audio fa-solid fa-repeat"></i></a>
+        <a href="#"><i class="fa-audio fa-solid fa-backward-step"></i></a>
+        <a href="#"><i class="fa-audio fa-solid fa-pause"></i></a>
+        <a href="#"><i class="fa-audio fa-solid fa-forward-step"></i></a>
+        <a href="#"><i class="fa-audio fa-solid fa-shuffle"></i></a>
+      </div>
+      <div class="timeic">
+        <div class="time__audio">
+          <p>00:00/00:00</p>
+        </div>
+        <a href="#"><i class="fa-audio fa-solid fa-heart"></i></a>
+        <i class="fa-audio fa-solid fa-ellipsis-vertical"></i>
+      </div>
+    </div>
     <script src="js/aside.js"></script>
     <script src="js/abonné.js"></script>
   </body>
