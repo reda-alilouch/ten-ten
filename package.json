@@ -1,0 +1,32 @@
+{
+  "name": "ten-ten",
+  "version": "1.0.0",
+  "description": "Music streaming platform",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:build": "tailwindcss -i ./css/tailwind.css -o ./css/tailwind.output.css --watch",
+    "tailwind:build-once": "tailwindcss -i ./css/tailwind.css -o ./css/tailwind.output.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reda-alilouch/ten-ten.git"
+  },
+  "keywords": [
+    "music",
+    "streaming",
+    "tailwind",
+    "html"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/reda-alilouch/ten-ten/issues"
+  },
+  "homepage": "https://github.com/reda-alilouch/ten-ten#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
