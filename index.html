@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tenten</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+
 
     <link
       rel="stylesheet"
@@ -30,25 +25,26 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tailwind.output.css" />
   </head>
   <body id="body-pd">
-    <header class="bg-light">
+    <header class="bg-gray-100">
       <div class="aside_toggle">
-        <i class="bx bx-menu" jjjj id="aside-toggle"></i>
+        <i class="bx bx-menu" id="aside-toggle"></i>
       </div>
       <div id="nav-header">
         <a id="nav-title" href="index.html" target="_blank">
           <img
             src="img/Remove-bg.ai_1716905679652.png"
             alt="logo"
-            class="logo me-5"
+            class="logo mr-5"
           />
         </a>
       </div>
-      <nav>
-        <form class="d-flex mx-auto" role="search">
+      <nav class="flex items-center justify-between">
+        <form class="flex mx-auto" role="search">
           <input
-            class="form-control m-5"
+            class="form-control m-5 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             type="search"
             placeholder="Recherche"
             aria-label="Search"
@@ -57,7 +53,7 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </form>
         <div
-          class="btn-group"
+          class="flex items-center space-x-2"
           role="group"
           aria-label="Button group with nested dropdown"
         >
@@ -69,9 +65,9 @@
               <span class="ball"></span>
             </label>
           </div>
-          <div class="traduire">
+          <div class="traduire relative">
             <button
-              class="btn border"
+              class="btn border px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -79,18 +75,33 @@
               <i class="fa-solid fa-globe"></i>
               <i class="fa-solid fa-chevron-down"></i>
             </button>
-            <ul class="dropdown-menu">
+            <ul
+              class="dropdown-menu absolute top-full right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg py-1 z-50"
+            >
               <li>
-                <a class="dropdown-item" href="#">Français</a>
+                <a
+                  class="dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  href="#"
+                  >Français</a
+                >
               </li>
               <li>
-                <a class="dropdown-item" href="#">English</a>
+                <a
+                  class="dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  href="#"
+                  >English</a
+                >
               </li>
             </ul>
           </div>
           <div>
             <a href="#"
-              ><button class="btn border" type="button">Conexion</button></a
+              ><button
+                class="btn border px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                type="button"
+              >
+                Conexion
+              </button></a
             >
           </div>
         </div>
@@ -129,13 +140,18 @@
           </div>
         </div>
       </div>
-      <div id="carouselExampleIndicators" class="carousel carousel1 slide">
-        <div class="carousel-indicators">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel carousel1 slide relative"
+      >
+        <div
+          class="carousel-indicators absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10"
+        >
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
-            class="active"
+            class="active w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -143,178 +159,192 @@
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="1"
+            class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all"
             aria-label="Slide 2"
           ></button>
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="2"
+            class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all"
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner relative overflow-hidden">
           <div class="carousel-item active">
             <img
               src="img/tape-6824489_960_720.jpg"
-              class="d-block w-100"
+              class="block w-full h-64 md:h-96 object-cover"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
               src="img/smartphone-coffee-music-objects.jpg"
-              class="d-block w-100"
+              class="block w-full h-64 md:h-96 object-cover"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
               src="img/tape-6824489_960_720.jpg"
-              class="d-block w-100"
+              class="block w-full h-64 md:h-96 object-cover"
               alt="..."
             />
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          class="carousel-control-prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="sr-only">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          class="carousel-control-next absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="sr-only">Next</span>
         </button>
       </div>
-      <div class="container top">
-        <div class="head">
-          <h2>Top titres</h2>
+      <div class="container mx-auto px-4 py-8">
+        <div class="head mb-6">
+          <h2 class="text-2xl font-bold text-gray-800">Top titres</h2>
         </div>
         <div class="container text-center container1">
-          <div class="row align-items-start">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
             <div class="col">
-              <div class="titre">
+              <div class="titre bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
                 <div class="img-h3">
                   <a href="#"
-                    ><img class="img-titre" src="img/tape-6824489_960_720.jpg"
+                    ><img class="img-titre w-full h-48 object-cover rounded-lg" src="img/tape-6824489_960_720.jpg"
                   /></a>
                   <i class="my-icon fa-solid fa-play"></i>
-                  <div class="h3">
-                    <h3>nom song</h3>
-                    <h3>nom artiste</h3>
+                  <div class="h3 mt-3">
+                    <h3 class="text-lg font-semibold">nom song</h3>
+                    <h3 class="text-gray-600">nom artiste</h3>
                   </div>
                 </div>
-                <div class="icon-time">
-                  <p>03:00</p>
-                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
+                <div class="icon-time flex items-center justify-between mt-3">
+                  <p class="text-sm text-gray-500">03:00</p>
+                  <div class="flex space-x-2">
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="titre__icon fa-solid fa-plus"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-red-500 transition-colors"><i class="titre__icon fa-solid fa-heart"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="titre">
+              <div class="titre bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
                 <div class="img-h3">
                   <a href="#"
-                    ><img class="img-titre" src="img/tape-6824489_960_720.jpg"
+                    ><img class="img-titre w-full h-48 object-cover rounded-lg" src="img/tape-6824489_960_720.jpg"
                   /></a>
                   <i class="my-icon fa-solid fa-play"></i>
-                  <div class="h3">
-                    <h3>nom song</h3>
-                    <h3>nom artiste</h3>
+                  <div class="h3 mt-3">
+                    <h3 class="text-lg font-semibold">nom song</h3>
+                    <h3 class="text-gray-600">nom artiste</h3>
                   </div>
                 </div>
-                <div class="icon-time">
-                  <p>03:00</p>
-                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
+                <div class="icon-time flex items-center justify-between mt-3">
+                  <p class="text-sm text-gray-500">03:00</p>
+                  <div class="flex space-x-2">
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="titre__icon fa-solid fa-plus"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-red-500 transition-colors"><i class="titre__icon fa-solid fa-heart"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="titre">
+              <div class="titre bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
                 <div class="img-h3">
                   <a href="#"
-                    ><img class="img-titre" src="img/tape-6824489_960_720.jpg"
+                    ><img class="img-titre w-full h-48 object-cover rounded-lg" src="img/tape-6824489_960_720.jpg"
                   /></a>
                   <i class="my-icon fa-solid fa-play"></i>
-                  <div class="h3">
-                    <h3>nom song</h3>
-                    <h3>nom artiste</h3>
+                  <div class="h3 mt-3">
+                    <h3 class="text-lg font-semibold">nom song</h3>
+                    <h3 class="text-gray-600">nom artiste</h3>
                   </div>
                 </div>
-                <div class="icon-time">
-                  <p>03:00</p>
-                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
+                <div class="icon-time flex items-center justify-between mt-3">
+                  <p class="text-sm text-gray-500">03:00</p>
+                  <div class="flex space-x-2">
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="titre__icon fa-solid fa-plus"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-red-500 transition-colors"><i class="titre__icon fa-solid fa-heart"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container text-center container1">
-          <div class="row align-items-center">
+        <div class="container text-center container1 mt-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
             <div class="col">
-              <div class="titre">
+              <div class="titre bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
                 <div class="img-h3">
                   <a href="#"
-                    ><img class="img-titre" src="img/tape-6824489_960_720.jpg"
+                    ><img class="img-titre w-full h-48 object-cover rounded-lg" src="img/tape-6824489_960_720.jpg"
                   /></a>
                   <i class="my-icon fa-solid fa-play"></i>
-                  <div class="h3">
-                    <h3>nom song</h3>
-                    <h3>nom artiste</h3>
+                  <div class="h3 mt-3">
+                    <h3 class="text-lg font-semibold">nom song</h3>
+                    <h3 class="text-gray-600">nom artiste</h3>
                   </div>
                 </div>
-                <div class="icon-time">
-                  <p>03:00</p>
-                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
+                <div class="icon-time flex items-center justify-between mt-3">
+                  <p class="text-sm text-gray-500">03:00</p>
+                  <div class="flex space-x-2">
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="titre__icon fa-solid fa-plus"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-red-500 transition-colors"><i class="titre__icon fa-solid fa-heart"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="titre">
+              <div class="titre bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
                 <div class="img-h3">
                   <a href="#"
-                    ><img class="img-titre" src="img/tape-6824489_960_720.jpg"
+                    ><img class="img-titre w-full h-48 object-cover rounded-lg" src="img/tape-6824489_960_720.jpg"
                   /></a>
                   <i class="my-icon fa-solid fa-play"></i>
-                  <div class="h3">
-                    <h3>nom song</h3>
-                    <h3>nom artiste</h3>
+                  <div class="h3 mt-3">
+                    <h3 class="text-lg font-semibold">nom song</h3>
+                    <h3 class="text-gray-600">nom artiste</h3>
                   </div>
                 </div>
-                <div class="icon-time">
-                  <p>03:00</p>
-                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
+                <div class="icon-time flex items-center justify-between mt-3">
+                  <p class="text-sm text-gray-500">03:00</p>
+                  <div class="flex space-x-2">
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="titre__icon fa-solid fa-plus"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-red-500 transition-colors"><i class="titre__icon fa-solid fa-heart"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="titre">
+              <div class="titre bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
                 <div class="img-h3">
                   <a href="#"
-                    ><img class="img-titre" src="img/tape-6824489_960_720.jpg"
+                    ><img class="img-titre w-full h-48 object-cover rounded-lg" src="img/tape-6824489_960_720.jpg"
                   /></a>
                   <i class="my-icon fa-solid fa-play"></i>
-                  <div class="h3">
-                    <h3>nom song</h3>
-                    <h3>nom artiste</h3>
+                  <div class="h3 mt-3">
+                    <h3 class="text-lg font-semibold">nom song</h3>
+                    <h3 class="text-gray-600">nom artiste</h3>
                   </div>
                 </div>
-                <div class="icon-time">
-                  <p>03:00</p>
-                  <a href="#"><i class="titre__icon fa-solid fa-plus"></i></a>
-                  <a href="#"><i class="titre__icon fa-solid fa-heart"></i></a>
+                <div class="icon-time flex items-center justify-between mt-3">
+                  <p class="text-sm text-gray-500">03:00</p>
+                  <div class="flex space-x-2">
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="titre__icon fa-solid fa-plus"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-red-500 transition-colors"><i class="titre__icon fa-solid fa-heart"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -384,158 +414,186 @@
           </div>
         </div>
       </div>
-      <div class="container top">
-        <div class="head">
-          <h2>Top albums</h2>
-          <div class="voir-plus">
-            <a href="#"> <p class="voir">voir plus</p></a>
-            <i class="fas fa-arrow-up-right"></i>
+      <div class="container mx-auto px-4 py-8">
+        <div class="head flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-gray-800">Top albums</h2>
+          <div class="voir-plus flex items-center space-x-2">
+            <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors"> 
+              <p class="voir font-medium">voir plus</p>
+            </a>
+            <i class="fas fa-arrow-up-right text-blue-600"></i>
           </div>
         </div>
         <div class="container container3">
-          <div class="row">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="col-3">
-              <div class="album">
+              <div class="album bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
                 <a href="#"
                   ><img
-                    class="album-img"
+                    class="album-img w-full h-48 object-cover rounded-lg"
                     src="img/smartphone-coffee-music-objects.jpg"
                 /></a>
-                <div class="icon-album">
-                  <a href="#"> <i class="icon fa-solid fa-circle-play"></i></a>
-                  <a href="#"><i class="icon fa-solid fa-heart"></i></a>
+                <div class="icon-album flex justify-center space-x-4 mt-4">
+                  <a href="#" class="text-2xl text-blue-600 hover:text-blue-800 transition-colors"> 
+                    <i class="icon fa-solid fa-circle-play"></i>
+                  </a>
+                  <a href="#" class="text-2xl text-red-500 hover:text-red-700 transition-colors">
+                    <i class="icon fa-solid fa-heart"></i>
+                  </a>
                 </div>
-                <div class="h3-album">
-                  <h3>nom albums</h3>
-                  <a href="#"><h3>nom artiste</h3></a>
+                <div class="h3-album text-center mt-3">
+                  <h3 class="text-lg font-semibold">nom albums</h3>
+                  <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                    <h3>nom artiste</h3>
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-3">
-              <div class="album">
+              <div class="album bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
                 <a href="#"
                   ><img
-                    class="album-img"
+                    class="album-img w-full h-48 object-cover rounded-lg"
                     src="img/smartphone-coffee-music-objects.jpg"
                 /></a>
-                <div class="icon-album">
-                  <a href="#"><i class="icon fa-solid fa-circle-play"></i></a>
-                  <a href="#"><i class="icon fa-solid fa-heart"></i></a>
+                <div class="icon-album flex justify-center space-x-4 mt-4">
+                  <a href="#" class="text-2xl text-blue-600 hover:text-blue-800 transition-colors"> 
+                    <i class="icon fa-solid fa-circle-play"></i>
+                  </a>
+                  <a href="#" class="text-2xl text-red-500 hover:text-red-700 transition-colors">
+                    <i class="icon fa-solid fa-heart"></i>
+                  </a>
                 </div>
-                <div class="h3-album">
-                  <h3>nom albums</h3>
-                  <a href="#"><h3>nom artiste</h3></a>
+                <div class="h3-album text-center mt-3">
+                  <h3 class="text-lg font-semibold">nom albums</h3>
+                  <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                    <h3>nom artiste</h3>
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-3">
-              <div class="album">
+              <div class="album bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
                 <a href="#"
                   ><img
-                    class="album-img"
+                    class="album-img w-full h-48 object-cover rounded-lg"
                     src="img/smartphone-coffee-music-objects.jpg"
                 /></a>
-                <div class="icon-album">
-                  <a href="#"><i class="icon fa-solid fa-circle-play"></i></a>
-                  <a href="#"><i class="icon fa-solid fa-heart"></i></a>
+                <div class="icon-album flex justify-center space-x-4 mt-4">
+                  <a href="#" class="text-2xl text-blue-600 hover:text-blue-800 transition-colors"> 
+                    <i class="icon fa-solid fa-circle-play"></i>
+                  </a>
+                  <a href="#" class="text-2xl text-red-500 hover:text-red-700 transition-colors">
+                    <i class="icon fa-solid fa-heart"></i>
+                  </a>
                 </div>
-                <div class="h3-album">
-                  <h3>nom albums</h3>
-                  <a href="#"><h3>nom artiste</h3></a>
+                <div class="h3-album text-center mt-3">
+                  <h3 class="text-lg font-semibold">nom albums</h3>
+                  <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                    <h3>nom artiste</h3>
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-3">
-              <div class="album">
+              <div class="album bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
                 <a href="#"
                   ><img
-                    class="album-img"
+                    class="album-img w-full h-48 object-cover rounded-lg"
                     src="img/smartphone-coffee-music-objects.jpg"
                 /></a>
-                <div class="icon-album">
-                  <a href="#"><i class="icon fa-solid fa-circle-play"></i></a>
-                  <a href="#"><i class="icon fa-solid fa-heart"></i></a>
+                <div class="icon-album flex justify-center space-x-4 mt-4">
+                  <a href="#" class="text-2xl text-blue-600 hover:text-blue-800 transition-colors"> 
+                    <i class="icon fa-solid fa-circle-play"></i>
+                  </a>
+                  <a href="#" class="text-2xl text-red-500 hover:text-red-700 transition-colors">
+                    <i class="icon fa-solid fa-heart"></i>
+                  </a>
                 </div>
-                <div class="h3-album">
-                  <h3>nom albums</h3>
-                  <a href="#"><h3>nom artiste</h3></a>
+                <div class="h3-album text-center mt-3">
+                  <h3 class="text-lg font-semibold">nom albums</h3>
+                  <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                    <h3>nom artiste</h3>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container top">
-        <div class="head">
-          <h2>Top artistes</h2>
+      <div class="container mx-auto px-4 py-8">
+        <div class="head flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-gray-800">Top artistes</h2>
           <div class="voir-plus">
-            <a href="#"> <p class="voir">voir plus</p></a>
+            <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors"> 
+              <p class="voir font-medium">voir plus</p>
+            </a>
           </div>
         </div>
         <div class="container text-start">
-          <div class="row">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             <div class="col-2 col-artistes">
-              <a href="#">
-                <div class="artistes">
+              <a href="#" class="block hover:scale-105 transition-transform">
+                <div class="artistes bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition-shadow">
                   <img
-                    class="img-artistes"
+                    class="img-artistes w-full h-32 object-cover rounded-lg mb-3"
                     src="img/female-singer-portrait-isolated-green-studio-wall-neon-light (1).jpg"
                   />
-                  <h3 class="h3-artistes">nom artiste</h3>
-                </div></a
-              >
+                  <h3 class="h3-artistes text-sm font-medium text-gray-800">nom artiste</h3>
+                </div>
+              </a>
             </div>
             <div class="col-2 col-artistes">
-              <a href="#">
-                <div class="artistes">
+              <a href="#" class="block hover:scale-105 transition-transform">
+                <div class="artistes bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition-shadow">
                   <img
-                    class="img-artistes"
+                    class="img-artistes w-full h-32 object-cover rounded-lg mb-3"
                     src="img/portrait-woman-singing-microphone.jpg"
                   />
-                  <h3 class="h3-artistes">nom artiste</h3>
-                </div></a
-              >
+                  <h3 class="h3-artistes text-sm font-medium text-gray-800">nom artiste</h3>
+                </div>
+              </a>
             </div>
             <div class="col-2 col-artistes">
-              <a href="#">
-                <div class="artistes">
+              <a href="#" class="block hover:scale-105 transition-transform">
+                <div class="artistes bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition-shadow">
                   <img
-                    class="img-artistes"
+                    class="img-artistes w-full h-32 object-cover rounded-lg mb-3"
                     src="img/beautiful-brunette-woman-singing-microphone-isolated-gray-wall.jpg"
                   />
-                  <h3 class="h3-artistes">nom artiste</h3>
-                </div></a
-              >
+                  <h3 class="h3-artistes text-sm font-medium text-gray-800">nom artiste</h3>
+                </div>
+              </a>
             </div>
             <div class="col-2 col-artistes">
-              <a href="#">
-                <div class="artistes">
+              <a href="#" class="block hover:scale-105 transition-transform">
+                <div class="artistes bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition-shadow">
                   <img
-                    class="img-artistes"
+                    class="img-artistes w-full h-32 object-cover rounded-lg mb-3"
                     src="img/young-caucasian-jazz-musician-playing-saxophone-gradient-blue-purple-studio-neon-light.jpg"
                   />
-                  <h3 class="h3-artistes">nom artiste</h3>
-                </div></a
-              >
+                  <h3 class="h3-artistes text-sm font-medium text-gray-800">nom artiste</h3>
+                </div>
+              </a>
             </div>
             <div class="col-2 col-artistes">
-              <a href="#">
-                <div class="artistes">
+              <a href="#" class="block hover:scale-105 transition-transform">
+                <div class="artistes bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition-shadow">
                   <img
-                    class="img-artistes"
+                    class="img-artistes w-full h-32 object-cover rounded-lg mb-3"
                     src="img/young-handsome-singer-man-casual-clothes.jpg"
                   />
-                  <h3 class="h3-artistes">nom artiste</h3>
-                </div></a
-              >
+                  <h3 class="h3-artistes text-sm font-medium text-gray-800">nom artiste</h3>
+                </div>
+              </a>
             </div>
             <div class="col-2 col-artistes">
-              <a href="#">
-                <div class="artistes">
-                  <img class="img-artistes" src="img/kid-with-microphone.jpg" />
-                  <h3 class="h3-artistes">nom artiste</h3>
-                </div></a
-              >
+              <a href="#" class="block hover:scale-105 transition-transform">
+                <div class="artistes bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition-shadow">
+                  <img class="img-artistes w-full h-32 object-cover rounded-lg mb-3" src="img/kid-with-microphone.jpg" />
+                  <h3 class="h3-artistes text-sm font-medium text-gray-800">nom artiste</h3>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -828,11 +886,13 @@
       </div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+
     <script src="js/aside.js"></script>
+  </body>
+</html>
+
+  </body>
+</html>
+
   </body>
 </html>
