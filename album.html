@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tenten</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
 
     <link
       rel="stylesheet"
@@ -33,23 +27,23 @@
     <link rel="stylesheet" href="css/tailwind.output.css" />
   </head>
   <body id="body-pd">
-    <header class="bg-light">
+    <header class="bg-gray-100">
       <div class="aside_toggle">
-        <i class="bx bx-menu" jjjj id="aside-toggle"></i>
+        <i class="bx bx-menu" id="aside-toggle"></i>
       </div>
       <div id="nav-header">
         <a id="nav-title" href="index.html" target="_blank">
           <img
             src="img/Remove-bg.ai_1716905679652.png"
             alt="logo"
-            class="logo me-5"
+            class="logo mr-5"
           />
         </a>
       </div>
-      <nav>
-        <form class="d-flex mx-auto" role="search">
+      <nav class="flex items-center justify-between">
+        <form class="flex mx-auto" role="search">
           <input
-            class="form-control m-5"
+            class="form-control m-5 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             type="search"
             placeholder="Recherche"
             aria-label="Search"
@@ -58,7 +52,7 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </form>
         <div
-          class="btn-group"
+          class="flex items-center space-x-2"
           role="group"
           aria-label="Button group with nested dropdown"
         >
@@ -70,9 +64,9 @@
               <span class="ball"></span>
             </label>
           </div>
-          <div class="traduire">
+          <div class="traduire relative">
             <button
-              class="btn border"
+              class="btn border px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -80,18 +74,33 @@
               <i class="fa-solid fa-globe"></i>
               <i class="fa-solid fa-chevron-down"></i>
             </button>
-            <ul class="dropdown-menu">
+            <ul
+              class="dropdown-menu absolute top-full right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg py-1 z-50"
+            >
               <li>
-                <a class="dropdown-item" href="#">Français</a>
+                <a
+                  class="dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  href="#"
+                  >Français</a
+                >
               </li>
               <li>
-                <a class="dropdown-item" href="#">English</a>
+                <a
+                  class="dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  href="#"
+                  >English</a
+                >
               </li>
             </ul>
           </div>
           <div>
             <a href="#"
-              ><button class="btn border" type="button">Conexion</button></a
+              ><button
+                class="btn border px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                type="button"
+              >
+                Conexion
+              </button></a
             >
           </div>
         </div>
@@ -155,46 +164,89 @@
           <i class="Album__icon fa-solid fa-heart"></i>
         </div>
       </div>
-      <div class="container">
-        <div class="col-lg-12">
+      <div class="container mx-auto px-4 py-8">
+        <div class="w-full">
           <div>
-            <div class="card-body px-0">
-              <div class="table-responsive">
-                <table class="table mb-0">
-                  <thead>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="overflow-x-auto">
+                <table class="w-full table-auto">
+                  <thead class="bg-gray-50">
                     <tr>
-                      <th scope="col">No.</th>
-                      <th scope="col">Title</th>
-                      <th scope="col">Album</th>
-                      <th scope="col">Time</th>
-                      <th scope="col">Action</th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        No.
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Title
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Album
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Time
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Action
+                      </th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td>01</td>
-                      <td>
-                        <div class="d-flex align-items-center col-10 col-md-5">
+                  <tbody class="bg-white divide-y divide-gray-200">
+                    <tr class="hover:bg-gray-50">
+                      <td
+                        class="px-6 py-4 whitespace-nowrap text-sm text-gray-900"
+                      >
+                        01
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
                           <div class="realese-song">
                             <a href="javascript:void(0);"
                               ><img
                                 src="../assets/images/dashboard/05.png"
-                                class="rounded avatar-60 img-fluid"
+                                class="w-12 h-12 rounded-lg object-cover"
                                 alt=""
                             /></a>
                           </div>
-                          <div class="ms-3">
-                            <p class="mb-0">The Girl</p>
-                            <small>By Snoods Smith Jonas</small>
+                          <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">
+                              The Girl
+                            </p>
+                            <p class="text-sm text-gray-500">
+                              By Snoods Smith Jonas
+                            </p>
                           </div>
                         </div>
                       </td>
-                      <td><p class="mb-0">Heart Is Beating</p></td>
-                      <td><p class="mb-0">4:21</p></td>
-                      <td>
-                        <div class="dropdown">
+                      <td
+                        class="px-6 py-4 whitespace-nowrap text-sm text-gray-900"
+                      >
+                        Heart Is Beating
+                      </td>
+                      <td
+                        class="px-6 py-4 whitespace-nowrap text-sm text-gray-900"
+                      >
+                        4:21
+                      </td>
+                      <td
+                        class="px-6 py-4 whitespace-nowrap text-sm font-medium"
+                      >
+                        <div class="dropdown relative">
                           <span
-                            class="d-flex align-items-center h5 mb-0"
+                            class="flex items-center text-lg cursor-pointer"
                             id="dropdownMenuButton07"
                             role="button"
                             data-bs-toggle="dropdown"
